@@ -5,8 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-  @GetMapping(value="/hello")
+
+    @GetMapping(value="/hello")
     public String hell(){
+        System.out.println("hello");
 
         return  "hellogggg";
     }
